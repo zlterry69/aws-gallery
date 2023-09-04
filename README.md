@@ -25,18 +25,16 @@ You should be create your enviroment:
 ```
 python -m venv myenv
 ```
-And your should be install the librarys:
-```
-pip install boto3 psycopg2-binary python-decouple pydantic uvicorn fastapi
-
-```
-
 After that you should start your python enviroment, or if you prefer activate the default enviroment with the next command:
 
 ```
  myenv/Scripts/activate   -> Remember to be located in the backend folder
 ```
+And your should be install the librarys:
+```
+pip install boto3 psycopg2-binary python-decouple pydantic uvicorn fastapi
 
+```
 To finish this tutorial, execute the next command to start the server:
 
 ```
