@@ -40,5 +40,28 @@ To finish this tutorial, execute the next command to start the server:
 ```
 python server.py
 ```
+After that you should create the database and the tables:
+
+```
+localhost:5050
+```
+And put the credentials in the docker-compose.yml to pgadmin:
+
+```
+user: admin@admin.com
+pass: root
+```
+Connect to the server, looking for the ip for your image:
+```
+docker ps --> after that select the hash of your container database and inspect
+docker inspect hash_of_your_database --> and copy the "IPAddress" for your connection in pgadmin,
+port: 5432
+database: postgres
+user: docker
+password: docker
+```
+And then connect.
+
+Then create the table video and inside put id,video_title,video_url
 
 And it's all for this time, enjoy it.
