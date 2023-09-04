@@ -72,7 +72,7 @@ Then create the table video and inside put id,video_title,video_url, there we ha
 
 CREATE TABLE IF NOT EXISTS public.video
 (
-    id integer NOT NULL DEFAULT nextval('video_id_seq'::regclass),
+    id integer NOT NULL,
     video_title character varying COLLATE pg_catalog."default" NOT NULL,
     video_url character varying COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT video_pkey PRIMARY KEY (id)
@@ -82,6 +82,15 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.video
     OWNER to docker;
+```
+Then execute this:
+```
+CREATE SEQUENCE video_id_seq;
+```
+Then execute this:
+```
+ALTER TABLE public.video
+ALTER COLUMN id SET DEFAULT nextval('video_id_seq');
 ```
 
 And it's all for this time, enjoy it.
