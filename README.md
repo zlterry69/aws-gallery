@@ -1,12 +1,15 @@
 # Simple Fullstack App using aws s3 services
 
-If you are in the folder "frontend", execute npm i, after run with:
+## FOLDER FRONTEND
+
+If you are in the folder FRONTEND, execute npm i, after run with:
 
 ```
+ npm i
  npm run start
 ```
-
-And after that, you can create the docker container execute the next command:
+## FOLDER BACKEND
+And after that, move to the folder BACKEND , you can create the docker container execute the next command:
 
 ```
 docker-compose up --build
