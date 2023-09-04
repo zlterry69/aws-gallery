@@ -27,7 +27,8 @@ python -m venv myenv
 ```
 And your should be install the librarys:
 ```
-pip install -r requirements.txt
+pip install boto3 psycopg2-binary python-decouple pydantic uvicorn fastapi
+
 ```
 
 After that you should start your python enviroment, or if you prefer activate the default enviroment with the next command:
