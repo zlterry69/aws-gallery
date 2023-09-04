@@ -63,6 +63,25 @@ password: docker
 ```
 And then connect.
 
-Then create the table video and inside put id,video_title,video_url
+Then create the table video and inside put id,video_title,video_url, there we have the script for the table:
+
+```
+-- Table: public.video
+
+-- DROP TABLE IF EXISTS public.video;
+
+CREATE TABLE IF NOT EXISTS public.video
+(
+    id integer NOT NULL DEFAULT nextval('video_id_seq'::regclass),
+    video_title character varying COLLATE pg_catalog."default" NOT NULL,
+    video_url character varying COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT video_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.video
+    OWNER to docker;
+```
 
 And it's all for this time, enjoy it.
