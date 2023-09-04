@@ -18,6 +18,14 @@ This command must be execute only once, after you can execute the next to run yo
 docker-compose up   ->  This is to start the container
 docker-compose down ->  This is to stop the container
 ```
+You should be create your enviroment:
+```
+python -m venv myenv
+```
+And your should be install the librarys:
+```
+pip install -r requirements.txt
+```
 
 After that you should start your python enviroment, or if you prefer activate the default enviroment with the next command:
 
