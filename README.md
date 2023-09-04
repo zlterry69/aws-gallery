@@ -51,10 +51,11 @@ And put the credentials in the docker-compose.yml to pgadmin:
 user: admin@admin.com
 pass: root
 ```
-Connect to the server, looking for the ip for your image:
+Then click on Add New Server, then connect to the server, looking for the ip for your image:
 ```
 docker ps --> after that select the hash of your container database and inspect
 docker inspect hash_of_your_database --> and copy the "IPAddress" for your connection in pgadmin,
+Host name/address: your_ip_address_of-your_hash_database
 port: 5432
 database: postgres
 user: docker
